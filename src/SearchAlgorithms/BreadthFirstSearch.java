@@ -1,7 +1,7 @@
-package SearchAlgorithms;
-import DataStructures.DoubleLinkedQueue;
-import Maze.Cell;
-import Maze.Maze;
+package searchalgorithms;
+import datastructures.DoubleLinkedQueue;
+import maze.Cell;
+import maze.Maze;
 
 /**
  * Breadth-first search class

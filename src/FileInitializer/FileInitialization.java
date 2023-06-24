@@ -1,11 +1,11 @@
-package FileInitializer;
+package fileinitializer;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-import Maze.Maze;
-import View.Menu;
+import maze.Maze;
+import writer.Print;
 
 public class FileInitialization {
     public int rows;
@@ -68,7 +68,7 @@ public class FileInitialization {
         FileContainer container = null;
         String fileName = null;
         boolean fileFound = false;
-        Menu menu = new Menu();
+        Print menu = new Print();
         
         while (fileFound == false) {
             try {

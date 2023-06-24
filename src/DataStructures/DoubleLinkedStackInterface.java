@@ -1,4 +1,4 @@
-package DataStructures;
+package datastructures;
 
 public interface DoubleLinkedStackInterface <T> {
      public boolean isEmpty();

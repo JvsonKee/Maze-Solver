@@ -1,6 +1,6 @@
-package DataStructures;
+package datastructures;
 
-import Exceptions.UnderflowException;
+import exceptions.UnderflowException;
 
 public class DoubleLinkedQueue <T> implements DoubleLinkedQueueInterface<T> {
 
