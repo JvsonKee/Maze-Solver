@@ -1,8 +1,8 @@
 package algorithms;
 import mazes.Cell;
 import mazes.Maze;
-import structures.DoubleLinkedQueue;
-import structures.DoubleLinkedStack;
+import datastructures.DoubleLinkedQueue;
+import datastructures.DoubleLinkedStack;
 
 /**
  * Depth-first Search class

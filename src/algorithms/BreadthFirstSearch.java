@@ -1,7 +1,7 @@
 package algorithms;
 import mazes.Cell;
 import mazes.Maze;
-import structures.DoubleLinkedQueue;
+import datastructures.DoubleLinkedQueue;
 
 /**
  * Breadth-first search class

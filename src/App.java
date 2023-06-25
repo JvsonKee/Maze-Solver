@@ -6,8 +6,8 @@ import algorithms.DepthFirstSearch;
 import initializer.FileInitialization;
 import mazes.Cell;
 import mazes.Maze;
-import structures.DoubleLinkedQueue;
-import structures.DoubleLinkedStack;
+import datastructures.DoubleLinkedQueue;
+import datastructures.DoubleLinkedStack;
 import writer.Print;
 
 public class App {

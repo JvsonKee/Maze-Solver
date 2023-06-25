@@ -1,7 +1,7 @@
 package writer;
 import java.util.Scanner;
 
-import structures.DoubleLinkedQueue;
+import datastructures.DoubleLinkedQueue;
 
 /**
  * Menu class
