@@ -1,4 +1,4 @@
-package exception;
+package exceptions;
 
 public class UnderflowException extends RuntimeException {
     public UnderflowException() {

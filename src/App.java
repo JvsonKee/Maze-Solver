@@ -1,13 +1,13 @@
 import java.io.FileOutputStream;
 import java.io.PrintStream;
 
-import algorithms.BreadthFirstSearch;
-import algorithms.DepthFirstSearch;
-import initializer.FileInitialization;
-import mazes.Cell;
-import mazes.Maze;
 import datastructures.DoubleLinkedQueue;
 import datastructures.DoubleLinkedStack;
+import fileinitializer.FileInitialization;
+import maze.Cell;
+import maze.Maze;
+import searchalgorithms.BreadthFirstSearch;
+import searchalgorithms.DepthFirstSearch;
 import writer.Print;
 
 public class App {

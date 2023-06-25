@@ -1,6 +1,6 @@
 package datastructures;
 
-import exception.UnderflowException;
+import exceptions.UnderflowException;
 
 public class DoubleLinkedStack <T> implements DoubleLinkedStackInterface<T> {
 

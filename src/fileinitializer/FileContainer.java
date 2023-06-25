@@ -1,4 +1,4 @@
-package initializer;
+package fileinitializer;
 import java.io.BufferedReader;
 import java.io.FileReader;
 

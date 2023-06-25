@@ -1,31 +1,29 @@
-package algorithms;
-import mazes.Cell;
-import mazes.Maze;
+package searchalgorithms;
 import datastructures.DoubleLinkedQueue;
-import datastructures.DoubleLinkedStack;
+import maze.Cell;
+import maze.Maze;
 
 /**
- * Depth-first Search class
+ * Breadth-first search class
  */
-public class DepthFirstSearch {
+public class BreadthFirstSearch {
 
     /**
-     * Depth-first search search algorithm
+     * Breadth-first search algorithm
      * 
      * @param maze - Input maze
-     * @param stack - The stack
+     * @param queue - The queue
      * @return - A trail queue of the steps taken throughout the maze
      */
-    public DoubleLinkedQueue<String> search(Maze maze, DoubleLinkedStack<Cell> stack) {
+    public DoubleLinkedQueue<String> search(Maze maze, DoubleLinkedQueue<Cell> queue) {
 
         DoubleLinkedQueue<String> trailQueue = new DoubleLinkedQueue<>();
         boolean moreToSearch = true;
         int[] start = maze.getStart();
         Cell s = maze.getCell(start[0], start[1]);
-        stack.push(s);
-
-        while (!stack.isEmpty() && moreToSearch) {
-            Cell j = stack.pop();
+        queue.enqueue(s);
+        while (!queue.isEmpty() && moreToSearch) {
+            Cell j = queue.dequeue();
             j.setVisited(true);
             trailQueue.enqueue(j.toString());
             if (j.getAppearance() == 'c') {
@@ -35,9 +33,9 @@ public class DepthFirstSearch {
                 for (int i = 0; i < 4; i++) {
                     k = j.peek(i, maze);
                     if (k.getAppearance() == 'c') {
-                        stack.push(k);
+                        queue.enqueue(k);
                     } else if (k.getAppearance() != '1' && !k.isVisited()) {
-                        stack.push(k);
+                        queue.enqueue(k);
                         k.setDirection(k, i);
                     }
                     maze.printMaze();
@@ -45,7 +43,6 @@ public class DepthFirstSearch {
             }
         }
         return trailQueue;
-    }   
+    }
 
 }
-
