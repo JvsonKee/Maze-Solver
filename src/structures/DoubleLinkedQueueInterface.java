@@ -1,4 +1,4 @@
-package datastructures;
+package structures;
 
 public interface DoubleLinkedQueueInterface<T> {
     public boolean isEmpty();

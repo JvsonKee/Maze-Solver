@@ -1,4 +1,4 @@
-package datastructures;
+package structures;
 
 public class DNode <T> {
     private T value;

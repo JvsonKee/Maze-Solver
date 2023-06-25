@@ -1,4 +1,4 @@
-package maze;
+package mazes;
 
 /**
  * Maze class

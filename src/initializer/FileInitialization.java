@@ -1,10 +1,10 @@
-package fileinitializer;
+package initializer;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-import maze.Maze;
+import mazes.Maze;
 import writer.Print;
 
 public class FileInitialization {
